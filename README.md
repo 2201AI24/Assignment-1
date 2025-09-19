@@ -115,14 +115,18 @@ The **SVM classifier** is tested with four kernels:
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/your-username/Assignment-1.git
+   git clone https://github.com/2201AI24/Assignment-1.git
    cd Assignment-1
-
-2.Open the notebook in Jupyter/Colab:
+   
+2. Install dependencies: 
+   ```bash
+   pip install -r requirements.txt
+   ```
+3.Open the notebook in Jupyter/Colab:
   ```
   jupyter notebook Assignment1.ipynb
   ```
-3.Run all cells to reproduce the results.
+4.Run all cells to reproduce the results.
 
 ---
 
