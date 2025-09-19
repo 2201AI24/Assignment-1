@@ -11,6 +11,18 @@ The goal is to compare kernels and determine the best-performing classifier for 
 
 ---
 
+## Dataset Description (Breast Cancer Wisconsin Diagnostic Dataset)
+
+The dataset comes from digitized images of fine needle aspirates (FNA) of breast masses. Each row in the CSV corresponds to one patient’s tumor sample.
+
+**Target (Dependent Variable / Class Label)**  
+- **Diagnosis:**
+  - **M** → Malignant (cancerous)  
+  - **B** → Benign (non-cancerous)  
+
+This is a **binary classification problem (M vs B)**.
+
+---
 ## 🚀 Features  
 
 * Load and analyze the **Breast Cancer Wisconsin dataset** (from scikit-learn)  
@@ -88,6 +100,8 @@ The **SVM classifier** is tested with four kernels:
 ---
 
 ## 📷 Sample Output  
+<img width="540" height="393" alt="image" src="https://github.com/user-attachments/assets/d0861165-c163-474a-bbd1-a72e711a9cc3" />
+<img width="994" height="547" alt="image" src="https://github.com/user-attachments/assets/ab79b317-6d05-44f3-ad7b-3764df445669" />
 
 <img width="613" height="451" alt="image" src="https://github.com/user-attachments/assets/25e2e06a-e7dc-450c-8f01-12a4b7bf918e" />
 <img width="365" height="316" alt="image" src="https://github.com/user-attachments/assets/034f1305-4117-4ef1-bede-cd85cda17801" />
