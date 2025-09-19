@@ -102,12 +102,10 @@ The **SVM classifier** is tested with four kernels:
 ## 📷 Sample Output  
 <img width="540" height="393" alt="image" src="https://github.com/user-attachments/assets/d0861165-c163-474a-bbd1-a72e711a9cc3" />
 <img width="994" height="547" alt="image" src="https://github.com/user-attachments/assets/ab79b317-6d05-44f3-ad7b-3764df445669" />
-
 <img width="613" height="451" alt="image" src="https://github.com/user-attachments/assets/25e2e06a-e7dc-450c-8f01-12a4b7bf918e" />
 <img width="365" height="316" alt="image" src="https://github.com/user-attachments/assets/034f1305-4117-4ef1-bede-cd85cda17801" />
 <img width="625" height="470" alt="image" src="https://github.com/user-attachments/assets/8aaa9c5e-a792-48fe-9361-2165f6b5193d" />
 
-*(Example: confusion matrix, decision boundary, or accuracy plot can be shown here)*  
 
 ---
 
