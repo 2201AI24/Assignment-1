@@ -51,19 +51,47 @@ The **SVM classifier** is tested with four kernels:
 ---
 
 ## 📊 Results  
+| Kernel  | Test Accuracy |
+| ------- | ------------- |
+| Linear  | 0.9649        |
+| Poly    | 0.9474        |
+| RBF     | 0.9649        |
+| Sigmoid | 0.9123        |
 
-| Kernel     | Accuracy | Precision | Recall | F1-Score |
-|------------|----------|-----------|--------|----------|
-| Linear     | XX%      | XX%       | XX%    | XX%      |
-| Polynomial | XX%      | XX%       | XX%    | XX%      |
-| RBF        | XX%      | XX%       | XX%    | XX%      |
-| Sigmoid    | XX%      | XX%       | XX%    | XX%      |  
+* Best Kernel: linear (or rbf)
 
-👉 The **best kernel** was identified based on F1-score and overall balance of precision/recall.  
+*  Test Accuracy: 0.9649
+
+*  SVM with linear/RBF kernel can accurately classify breast cancer instances with minimal misclassifications.
+
+| Class           | Precision | Recall | F1-Score | Support |
+| --------------- | --------- | ------ | -------- | ------- |
+| 0 (Benign)      | 0.99      | 0.97   | 0.98     | 70      |
+| 1 (Malignant)   | 0.96      | 0.98   | 0.97     | 44      |
+| **Avg / Total** | 0.97      | 0.97   | 0.97     | 114     |
+
+[[72  0]
+ [ 3 39]]
+ 
+* Interpretation:
+
+  *  TN: 68, FP: 2, FN: 1, TP: 43
+
+*  Only 3 misclassifications → strong performance.
+
+*  Best Parameters: {'C': 1, 'kernel': 'linear', 'gamma': 'scale', 'degree': 3}
+
+*  Cross-Validation Accuracy: 0.9649
+
+*  Test Accuracy with Best Model: 0.9649
 
 ---
 
 ## 📷 Sample Output  
+
+<img width="613" height="451" alt="image" src="https://github.com/user-attachments/assets/25e2e06a-e7dc-450c-8f01-12a4b7bf918e" />
+<img width="365" height="316" alt="image" src="https://github.com/user-attachments/assets/034f1305-4117-4ef1-bede-cd85cda17801" />
+<img width="625" height="470" alt="image" src="https://github.com/user-attachments/assets/8aaa9c5e-a792-48fe-9361-2165f6b5193d" />
 
 *(Example: confusion matrix, decision boundary, or accuracy plot can be shown here)*  
 
@@ -77,8 +105,9 @@ The **SVM classifier** is tested with four kernels:
    cd Assignment-1
 
 2.Open the notebook in Jupyter/Colab:
+  ```
   jupyter notebook Assignment1.ipynb
-
+  ```
 3.Run all cells to reproduce the results.
 
 ---
@@ -86,15 +115,10 @@ The **SVM classifier** is tested with four kernels:
 ## 📁 Project Structure
 
 ```
-├── app.py
-├── model.ipynb 
-├── xgb_churn_model.pkl
-├── feature_columns.pkl
-├── label_encoders.pkl
-├── .env
-├── requirements.txt
-├──README.md
-└──WA_Fn-UseC_-Telco-Customer-Churn.csv
+├── Assignment1.ipynb   # Colab notebook with full code
+├── Assignment1.pdf     # Exported PDF report
+├── README.md           # Project documentation
+└──requirements.txt
 ```
 
 ---
@@ -103,7 +127,8 @@ The **SVM classifier** is tested with four kernels:
 
 M. Umesh Chandra<br>
 BTech Artificial Intelligence and Data Science (Batch 2022)<br> 
-Project: Telecom Churn Prediction + LLM Explanation
+Roll No: 2201AI24
+Course: Advance Pattern Recognition – Assignment 1
 
 ---
 
